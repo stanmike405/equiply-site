@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Equiply - Rent Tools Locally</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f9fafb; color: #1f2937; }
+    header, footer { background: #1e3a8a; color: white; text-align: center; padding: 40px 20px; }
+    .button { background: #3b82f6; border: none; padding: 15px 25px; color: white; font-size: 1rem; border-radius: 5px; cursor: pointer; }
+    .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+    .columns { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; }
+    .column { flex: 1; min-width: 280px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    ul { padding-left: 20px; }
+    form { background: white; padding: 20px; border-radius: 8px; margin-top: 40px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    input, button { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    input[type="file"] { padding: 5px; }
+    button[type="submit"] { background: #2563eb; color: white; border: none; font-weight: bold; }
+    .footer-text { font-size: 0.9em; margin-top: 10px; }
+    a { color: #93c5fd; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Rent Tools & Equipment Locally, Instantly.</h1>
+  <p>Skip the rental shops. Get the gear you need - fast, affordable, from people near you.</p>
+  <a href="#waitlist"><button class="button">Join the Waitlist</button></a>
+</header>
+
+<div class="container">
+  <h2>How It Works</h2>
+  <div class="columns">
+    <div class="column">
+      <h3>Browse</h3>
+      <p>Find tools and equipment near you. Drills, excavators, trailers - you name it.</p>
+    </div>
+    <div class="column">
+      <h3>Book</h3>
+      <p>Reserve what you need, when you need it. Built-in scheduling keeps it simple.</p>
+    </div>
+    <div class="column">
+      <h3>Pick Up</h3>
+      <p>Meet up locally or request delivery from the owner.</p>
+    </div>
+  </div>
+
+  <h2>Why Equiply</h2>
+  <ul>
+    <li>Save money by renting from real people - not overpriced stores</li>
+    <li>Find specialty gear the big box shops don't carry</li>
+    <li>Make passive income by renting out your own gear</li>
+    <li>Designed for contractors, DIYers, and blue-collar hustlers</li>
+    <li>Safe, verified profiles and secure payments</li>
+  </ul>
+
+  <h2 id="waitlist">Tool Owner Waitlist Form</h2>
+  <form name="tool-owner" method="POST" data-netlify="true" enctype="multipart/form-data">
+    <input type="hidden" name="form-name" value="tool-owner">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="tool" placeholder="Tool Type" required>
+    <input type="file" name="photo" accept="image/*">
+    <button type="submit">Join the Waitlist</button>
+  </form>
+</div>
+
+<footer>
+  <p>Equiply - Peer-to-peer tool & equipment rentals for real workers.</p>
+  <p>Built by blue collars, for blue collars.</p>
+  <div class="footer-text">
+    <p>Instagram: <a href="https://instagram.com/equiplyapp" target="_blank">@equiplyapp</a></p>
+    <p>Email: <a href="mailto:info@getequiply.com">info@getequiply.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
